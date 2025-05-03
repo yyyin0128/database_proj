@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>All-en 主頁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo"> <!-- 左上LOGO -->
+        <img src="logo.png" alt="All-en Logo" />
+    </div>
+    <div class="actions"> <!-- 右上登入與漢堡選單 -->
+        <div class="login">
+            <span class="icon">👤</span>
+            <span>登入</span>
+        </div>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </div>
+</header>
+
+<nav id="side-nav" class="side-nav">
+    <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">服務介紹</a></li>
+        <li><a href="#">產品資訊</a></li>
+        <li><a href="#">聯絡我們</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <!-- 頁面內容放這裡 -->
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("side-nav").classList.toggle("open");
+    }
+</script>
+</body>
+</html>
