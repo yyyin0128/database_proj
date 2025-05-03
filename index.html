@@ -7,35 +7,29 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo"> <!-- 左上LOGO -->
+    <div class="logo">
         <img src="logo.png" alt="All-en Logo" />
     </div>
-    <div class="actions"> <!-- 右上登入與漢堡選單 -->
+
+    <nav class="nav-links">
+        <span>標題一</span>
+        <span>標題二</span>
+        <span>標題三</span>
+        <span>標題四</span>
+        <span>標題五</span>
+    </nav>
+
+    <div class="actions">
         <div class="login">
             <span class="icon">👤</span>
             <span>登入</span>
         </div>
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="menu-btn">☰</div>
     </div>
 </header>
 
-<nav id="side-nav" class="side-nav">
-    <ul>
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">服務介紹</a></li>
-        <li><a href="#">產品資訊</a></li>
-        <li><a href="#">聯絡我們</a></li>
-    </ul>
-</nav>
-
 <div class="content">
-    <!-- 頁面內容放這裡 -->
+    <!-- 這裡是主內容區 -->
 </div>
-
-<script>
-    function toggleMenu() {
-        document.getElementById("side-nav").classList.toggle("open");
-    }
-</script>
 </body>
 </html>

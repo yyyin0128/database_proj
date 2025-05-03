@@ -15,6 +15,18 @@ body {
     height: 40px;
 }
 
+.nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.nav-links span {
+    cursor: pointer;
+}
+
 .actions {
     display: flex;
     align-items: center;
@@ -25,41 +37,9 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-weight: bold;
 }
 
 .menu-btn {
     font-size: 24px;
     cursor: pointer;
-}
-
-.side-nav {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background: #333;
-    color: white;
-    padding: 60px 20px;
-    transition: right 0.3s;
-}
-
-.side-nav.open {
-    right: 0;
-}
-
-.side-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.side-nav li {
-    margin: 20px 0;
-}
-
-.side-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
 }
